@@ -2,17 +2,6 @@ import Queen from "./classes/queen.js";
 import Drone from "./classes/drone.js";
 import Worker from "./classes/worker.js";
 
-// go add hp to snakes and represent it globaly 
-// link random action to a specific snake and mark that snake as hit showing a reduction in hp. 
-
-// set a for loop for beenHit/check-queenDead/beenHit etc...
-    // const playgame = () => {
-    //   for (let i=0;i<5;i++){
-    //       aFunction();
-    //       anotherFunction();
-    //   }
-    // } 
-    // playgame();
 let snakes;
 
 // Methods
@@ -54,6 +43,7 @@ const attackSnakes = () => {
   return aliveSnakeArray;
 };
 
+// add points on to both players
 const displayScores = () => {
   console.log("i'm displaying a score")
   let htmlArray = [...document.querySelectorAll('.points')];
@@ -63,9 +53,9 @@ const displayScores = () => {
 };
 
 
-
+// use this function to render a start game page - when gameOver reset should take back to this
 const startGame = () => {
-  document.getElementById("startPage").style.display = "none";
+  document.getElementById("welcome").style.display = "none";
   
 }
 

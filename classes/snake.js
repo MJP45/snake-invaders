@@ -15,6 +15,5 @@
         this.hp = 0;
         this.alive = false;
     }
-    // remove from array of selectable snakes 
   }
 };
