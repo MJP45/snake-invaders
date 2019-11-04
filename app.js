@@ -28,6 +28,7 @@ const killEveryone = () => {
   if (snakes[0].hp <= 0){
       snakes.forEach(snake => {
         snake.hp = 0;
+        document.getElementById("end").style.display = "block";      
       });
   };
 };
@@ -41,9 +42,9 @@ const attackSnakes = () => {
   const aliveSnakeArray = snakes.filter(snake => snake.alive === true);
   killEveryone();
   return aliveSnakeArray;
+  
 };
 
-// add points on to both players
 const displayScores = () => {
   console.log("i'm displaying a score")
   let htmlArray = [...document.querySelectorAll('.points')];
@@ -56,14 +57,23 @@ const displayScores = () => {
 // use this function to render a start game page - when gameOver reset should take back to this
 const startGame = () => {
   document.getElementById("welcome").style.display = "none";
-  
 }
+
+const restartGame = () => {
+  document.getElementById("end").style.display = "none"; 
+  document.getElementById("welcome").style.display = "block";
+
+
+}
+
 
 // startgame 
 
 makeSnakes();
 document.getElementById("button").addEventListener("click", attackSnakes);
 document.getElementById("startGame").addEventListener("click", startGame );
+document.getElementById("restartGame").addEventListener("click", restartGame );
+console.log('hi ive been clicked')
 
 
 

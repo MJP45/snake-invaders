@@ -13,19 +13,48 @@ body {
   height: 90vh;
   border: 2px green solid;
   display: flex; 
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
   background-image: url(/assets/harry-potter-background.gif);
   background-repeat: no-repeat;
   background-size: cover; 
-  /* display: none; */
+  position: relative;
+}
+
+#button {
+  background-image: url(/assets/wand.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p {
+  color: rgb(173, 167, 167);
 }
 
 #welcome {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: rgb(3, 66, 3);
+}
+
+.startImage{
+  background-image: url(/assets/voldemort.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#end {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(3, 66, 3);
+  display: none;
+}
+
+.gameOverImage {
+  background-image: url(/assets/hagrid-clapping.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .snake {
