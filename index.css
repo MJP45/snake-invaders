@@ -8,3 +8,89 @@ body {
   padding: 1%;
   margin: 1%;
 }
+
+.main-content {
+  height: 90vh;
+  border: 2px green solid;
+  display: flex; 
+  flex-direction: row;
+  align-content: center;
+  background-image: url(/assets/harry-potter-background.gif);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: relative;
+}
+
+#button {
+  background-image: url(/assets/wand.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p {
+  color: rgb(173, 167, 167);
+}
+
+#welcome {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(3, 66, 3);
+}
+
+.startImage{
+  background-image: url(/assets/voldemort.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#end {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(3, 66, 3);
+  display: none;
+}
+
+.gameOverImage {
+  background-image: url(/assets/hagrid-clapping.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.snake {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.queen {
+  background-image: url(/assets/QUEEN.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.worker {
+  background-image: url(/assets/worker.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+.drone {
+  background-image: url(/assets/drone.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.points {
+  color: white;
+}
+
+div {
+  width: 100px; 
+  height: 200px; 
+  margin: 2%;
+  color: white;
+}
+
