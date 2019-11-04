@@ -9,6 +9,9 @@ After getting the logic working, I refactored the code and split my classes out 
 
 When this was all working, I wrote some tests using jest to allow for automated testing of the game logic. 
 
+## How to install
+`git clone` the repository and then `yarn install`
+this will ensure that you have any dev dependencies needed and be able to run the test package.
 
 ## Current state
 The game is functioning and has taught me a lot about how to use classes and 
